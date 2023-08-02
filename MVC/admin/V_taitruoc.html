@@ -1,28 +1,31 @@
 ﻿<!DOCTYPE html>
-    <html lang="en">
-
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Trang chu admin</title>
+        <title>Tải trước</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
-
-
-        <!-- third party css -->
-        <link href="css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
-        <!-- third party css end -->
-
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        
         <!-- App css -->
         <link href="css/icons.min.css" rel="stylesheet" type="text/css">
         <link href="css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     </head>
 
-    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false,
-         "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+
+        <!-- Pre-loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="bouncing-loader"><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <!-- End Preloader-->
+
         <!-- Begin page -->
         <div class="wrapper">
             <!-- ========== Left Sidebar Start ========== -->
@@ -69,7 +72,7 @@
                                         <a href="V_phantich.html">Phân tích</a>
                                     </li>
                                     <li>
-                                        <a href="V_CRM.html">CRM</a>
+                                        <a href="dashboard-crm.html">CRM</a>
                                     </li>
                                     <li>
                                         <a href="V_duan.html">Dự án</a>
@@ -81,14 +84,14 @@
                         <li class="side-nav-title side-nav-item">Ứng dụng</li>
 
                         <li class="side-nav-item">
-                            <a href="apps-calendar.html" class="side-nav-link">
+                            <a href="V_lich.html" class="side-nav-link">
                                 <i class="uil-calender"></i>
                                 <span> Lịch </span>
                             </a>
                         </li>
 
                         <li class="side-nav-item">
-                            <a href="apps-chat.html" class="side-nav-link">
+                            <a href="V_trochuyen.html" class="side-nav-link">
                                 <i class="uil-comments-alt"></i>
                                 <span> Trò chuyện </span>
                             </a>
@@ -106,25 +109,25 @@
                                         <a href="V_danhsachsanpham.html">Danh sách sản phẩm</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-products-details.html">Chi tiết sản phẩm</a>
+                                        <a href="V_chitietsanpham.html">Chi tiết sản phẩm</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-orders.html">Đơn đặt hàng</a>
+                                        <a href="V_dondathang.html">Đơn đặt hàng</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-orders-details.html">Chi tiết đặt hàng</a>
+                                        <a href="V_chitietdathang.html">Chi tiết đặt hàng</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-customers.html">Khách hàng</a>
+                                        <a href="V_danhsachkhachhang.html">Khách hàng</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-shopping-cart.html">Giỏ hàng</a>
+                                        <a href="V_nguoiban.html">Giỏ hàng</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-checkout.html">Thanh toán</a>
+                                        <a href="V_thanhtoan.html">Thanh toán</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-sellers.html">Người bán</a>
+                                        <a href="V_nguoiban.html">Người bán</a>
                                     </li>
                                 </ul>
                             </div>
@@ -142,10 +145,10 @@
                                         <a href="V_themsanpham.html">Thêm sản phẩm</a>
                                     </li>
                                     <li>
-                                        <a href="V_themnhanvien.html">Thêm khách hàng</a>
+                                        <a href="V_themkhachhang.html">Thêm khách hàng</a>
                                     </li>
                                     <li>
-                                        <a href="#">Thêm đơn hàng</a>
+                                        <a href="V_themdonhang.html">Thêm đơn hàng</a>
                                     </li>
                                 </ul>
                             </div>
@@ -160,10 +163,10 @@
                             <div class="collapse" id="sidebarEmail">
                                 <ul class="side-nav-second-level">
                                     <li>
-                                        <a href="apps-email-inbox.html">Hộp thư đến</a>
+                                        <a href="V_inbox.html">Hộp thư đến</a>
                                     </li>
                                     <li>
-                                        <a href="apps-email-read.html">Đọc mail</a>
+                                        <a href="V_read.html">Đọc mail</a>
                                     </li>
                                 </ul>
                             </div>
@@ -178,16 +181,16 @@
                             <div class="collapse" id="sidebarProjects">
                                 <ul class="side-nav-second-level">
                                     <li>
-                                        <a href="apps-projects-list.html">Danh sách</a>
+                                        <a href="V_ds_duan.html">Danh sách</a>
                                     </li>
                                     <li>
-                                        <a href="apps-projects-details.html">Chi tiết</a>
+                                        <a href="V_chitiet_duan.html">Chi tiết</a>
                                     </li>
                                     <li>
-                                        <a href="apps-projects-gantt.html">Gantt <span class="badge rounded-pill badge-light-lighten font-10 float-end">Mới</span></a>
+                                        <a href="V_gantt_duan.html">Gantt <span class="badge rounded-pill badge-light-lighten font-10 float-end">Mới</span></a>
                                     </li>
                                     <li>
-                                        <a href="apps-projects-add.html">Tạo dự án <span class="badge rounded-pill badge-success-lighten font-10 float-end">Mới</span></a>
+                                        <a href="V_taoduan.html">Tạo dự án <span class="badge rounded-pill badge-success-lighten font-10 float-end">Mới</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -222,7 +225,7 @@
                         </li>
 
                         <li class="side-nav-item">
-                            <a href="apps-file-manager.html" class="side-nav-link">
+                            <a href="V_quanlytaptin.html" class="side-nav-link">
                                 <i class="uil-folder-plus"></i>
                                 <span> Quản lý tập tin </span>
                             </a>
@@ -239,22 +242,22 @@
                             <div class="collapse" id="sidebarPages">
                                 <ul class="side-nav-second-level">
                                     <li>
-                                        <a href="pages-profile.html">Hồ sơ</a>
+                                        <a href="V_hoso.html">Hồ sơ</a>
                                     </li>
                                     <li>
-                                        <a href="pages-profile-2.html">Hồ sơ 2</a>
+                                        <a href="V_hoso2.html">Hồ sơ 2</a>
                                     </li>
                                     <li>
-                                        <a href="pages-invoice.html">Hóa đơn</a>
+                                        <a href="V_hoadon.html">Hóa đơn</a>
                                     </li>
                                     <li>
-                                        <a href="pages-faq.html">Câu hỏi thường gặp</a>
+                                        <a href="V_cauhoithuonggap.html">Câu hỏi thường gặp</a>
                                     </li>
                                     <li>
-                                        <a href="pages-pricing.html">Định giá</a>
+                                        <a href="V_dinhgia.html">Định giá</a>
                                     </li>
                                     <li>
-                                        <a href="pages-maintenance.html">Bảo trì</a>
+                                        <a href="V_baotri.html">Bảo trì</a>
                                     </li>
                                     <li class="side-nav-item">
                                         <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false" aria-controls="sidebarPagesAuth">
@@ -264,40 +267,40 @@
                                         <div class="collapse" id="sidebarPagesAuth">
                                             <ul class="side-nav-third-level">
                                                 <li>
-                                                    <a href="pages-login.html">Đăng nhập</a>
+                                                    <a href="V_login.html">Đăng nhập</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-login-2.html">Login 2</a>
+                                                    <a href="V_login2.html">Đăng nhập 2</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-register.html">Register</a>
+                                                    <a href="V_dki.html">Đăng kí</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-register-2.html">Register 2</a>
+                                                    <a href="V_dki2.html">Đăng kí 2</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-logout.html">Logout</a>
+                                                    <a href="V_logout.html">Đăng xuất</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-logout-2.html">Logout 2</a>
+                                                    <a href="V_logout2.html">Đăng xuất 2</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-recoverpw.html">Recover Password</a>
+                                                    <a href="V_khoiphucmatkhau.html">Khôi phục mật khẩu</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-recoverpw-2.html">Recover Password 2</a>
+                                                    <a href="V_khoiphucmatkhau2.html">Khôi phục mật khẩu 2</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-lock-screen.html">Lock Screen</a>
+                                                    <a href="V_manhinhkhoa.html">Màn hình khóa</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-lock-screen-2.html">Lock Screen 2</a>
+                                                    <a href="V_manhinhkhoa2.html">Màn hình khóa 2</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-confirm-mail.html">Confirm Mail</a>
+                                                    <a href="V_xacnhanthu.html">Xác nhận thư</a>
                                                 </li>
                                                 <li>
-                                                    <a href="pages-confirm-mail-2.html">Confirm Mail 2</a>
+                                                    <a href="pages-confirm-mail-2.html">Xác nhận thư 2</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -322,13 +325,13 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="pages-starter.html">Trang bắt đầu</a>
+                                        <a href="V_trangbatdau.html">Trang bắt đầu</a>
                                     </li>
                                     <li>
-                                        <a href="pages-preloader.html">Tải trước</a>
+                                        <a href="V_taitruoc.html">Tải trước</a>
                                     </li>
                                     <li>
-                                        <a href="pages-timeline.html">Mốc thời gian</a>
+                                        <a href="V_mocthoigian.html">Mốc thời gian</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1028,12 +1031,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div><br>
+                    </div>
                     <!-- end Topbar -->
-                    
+
                     <!-- Start Content-->
                     <div class="container-fluid">
-
+                        
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
@@ -1041,479 +1044,447 @@
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Apps</a></li>
-                                            <li class="breadcrumb-item active">File Manager</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                                            <li class="breadcrumb-item active">Preloader Example</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">File Manager</h4>
+                                    <h4 class="page-title">Dashboard With Preloader</h4>
                                 </div>
                             </div>
-                        </div>
-                        <!-- end page title -->
+                        </div>     
+                        <!-- end page title --> 
 
                         <div class="row">
-
-                            <!-- Right Sidebar -->
-                            <div class="col-12">
+        
+                            <div class="col-lg-6 col-xl-3">
                                 <div class="card">
                                     <div class="card-body">
-                                        <!-- Left sidebar -->
-                                        <div class="page-aside-left">
-
-                                            <div class="btn-group d-block mb-2">
-                                                <button type="button" class="btn btn-success dropdown-toggle w-100" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-plus"></i> Create New </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-folder-plus-outline me-1"></i> Folder</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-file-plus-outline me-1"></i> File</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-file-document me-1"></i> Document</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-upload me-1"></i> Choose File</a>
+                                        <div class="row align-items-center">
+                                            <div class="col-6">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Campaign Sent</h5>
+                                                <h3 class="my-2 py-1">9,184</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 3.27%</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="text-end">
+                                                    <div id="campaign-sent-chart" data-colors="#727cf5"></div>
                                                 </div>
                                             </div>
-                                            <div class="email-menu-list mt-3">
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-folder-outline font-18 align-middle me-2"></i>My Files</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-google-drive font-18 align-middle me-2"></i>Google Drive</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-dropbox font-18 align-middle me-2"></i>Dropbox</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-share-variant font-18 align-middle me-2"></i>Share with me</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-clock-outline font-18 align-middle me-2"></i>Recent</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-star-outline font-18 align-middle me-2"></i>Starred</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-delete font-18 align-middle me-2"></i>Deleted Files</a>
+                                        </div> <!-- end row-->
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card -->
+                            </div> <!-- end col -->
+        
+                            <div class="col-lg-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-6">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="New Leads">New Leads</h5>
+                                                <h3 class="my-2 py-1">3,254</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 5.38%</span>
+                                                </p>
                                             </div>
-    
-                                            <div class="mt-5">
-                                                <h4><span class="badge rounded-pill p-1 px-2 badge-secondary-lighten">FREE</span></h4>
-                                                <h6 class="text-uppercase mt-3">Storage</h6>
-                                                <div class="progress my-2 progress-sm">
-                                                    <div class="progress-bar progress-lg bg-success" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="col-6">
+                                                <div class="text-end">
+                                                    <div id="new-leads-chart" data-colors="#0acf97"></div>
                                                 </div>
-                                                <p class="text-muted font-12 mb-0">7.02 GB (46%) of 15 GB used</p>
                                             </div>
+                                        </div> <!-- end row-->
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card -->
+                            </div> <!-- end col -->
 
+                            <div class="col-lg-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-6">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Deals">Deals</h5>
+                                                <h3 class="my-2 py-1">861</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="text-end">
+                                                    <div id="deals-chart" data-colors="#727cf5"></div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end row-->
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card -->
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-6">
+                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Booked Revenue">Booked Revenue</h5>
+                                                <h3 class="my-2 py-1">$253k</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 11.7%</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="text-end">
+                                                    <div id="booked-revenue-chart" data-colors="#0acf97"></div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end row-->
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card -->
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Today</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
+                                            </div>
                                         </div>
-                                        <!-- End Left sidebar -->
 
-                                        <div class="page-aside-right">
+                                        <h4 class="header-title mb-1">Campaigns</h4>
 
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="app-search">
-                                                    <form>
-                                                        <div class="mb-2 position-relative">
-                                                            <input type="text" class="form-control" placeholder="Search files...">
-                                                            <span class="mdi mdi-magnify search-icon"></span>
-                                                        </div>
-                                                    </form>
+                                        <div id="dash-campaigns-chart" class="apex-charts" data-colors="#ffbc00,#727cf5,#0acf97"></div>
+
+                                        <div class="row text-center mt-2">
+                                            <div class="col-md-4">
+                                                <i class="mdi mdi-send widget-icon rounded-circle bg-light-lighten text-muted"></i>
+                                                <h3 class="fw-normal mt-3">
+                                                    <span>6,510</span>
+                                                </h3>
+                                                <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-warning"></i> Total Sent</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <i class="mdi mdi-flag-variant widget-icon rounded-circle bg-light-lighten text-muted"></i>
+                                                <h3 class="fw-normal mt-3">
+                                                    <span>3,487</span>
+                                                </h3>
+                                                <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-primary"></i> Reached</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <i class="mdi mdi-email-open widget-icon rounded-circle bg-light-lighten text-muted"></i>
+                                                <h3 class="fw-normal mt-3">
+                                                    <span>1,568</span>
+                                                </h3>
+                                                <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-success"></i> Opened</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+    
+                            <div class="col-lg-7">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Today</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4 class="header-title mb-3">Revenue</h4>
+
+                                        <div class="chart-content-bg">
+                                            <div class="row text-center">
+                                                <div class="col-md-6">
+                                                    <p class="text-muted mb-0 mt-3">Current Month</p>
+                                                    <h2 class="fw-normal mb-3">
+                                                        <span>$42,025</span>
+                                                    </h2>
                                                 </div>
-                                                <div>
-                                                    <button type="submit" class="btn btn-sm btn-light"><i class="mdi mdi-format-list-bulleted"></i></button>
-                                                    <button type="submit" class="btn btn-sm"><i class="mdi mdi-view-grid"></i></button>
-                                                    <button type="submit" class="btn btn-sm"><i class="mdi mdi-information-outline"></i></button>
+                                                <div class="col-md-6">
+                                                    <p class="text-muted mb-0 mt-3">Previous Month</p>
+                                                    <h2 class="fw-normal mb-3">
+                                                        <span>$74,651</span>
+                                                    </h2>
                                                 </div>
                                             </div>
-    
-                                            <div class="mt-3">
-                                                <h5 class="mb-2">Quick Access</h5>
-    
-                                                <div class="row mx-n1 g-0">
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-folder-zip font-16"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Hyper-sketch.zip</a>
-                                                                        <p class="mb-0 font-13">2.3 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-folder font-16"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Compile Version</a>
-                                                                        <p class="mb-0 font-13">87.2 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-primary-lighten text-primary rounded">
-                                                                                <i class="mdi mdi-folder-zip-outline font-16"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">admin.zip</a>
-                                                                        <p class="mb-0 font-13">45.1 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-file-pdf-outline font-16"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Docs.pdf</a>
-                                                                        <p class="mb-0 font-13">7.5 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-file-pdf-outline font-18"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">License-details.pdf</a>
-                                                                        <p class="mb-0 font-13">784 KB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-folder-account font-18"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Purchase Verification</a>
-                                                                        <p class="mb-0 font-13">2.2 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-folder-account font-18"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Hyper Integrations</a>
-                                                                        <p class="mb-0 font-13">874 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-                                                </div> <!-- end row-->
-                                            </div> <!-- end .mt-3-->
-    
-    
-                                            <div class="mt-3">
-                                                <h5 class="mb-3">Recent</h5>
-    
-                                                <div class="table-responsive">
-                                                    <table class="table table-centered table-nowrap mb-0">
-                                                        <thead class="table-light">
-                                                            <tr>
-                                                                <th class="border-0">Name</th>
-                                                                <th class="border-0">Last Modified</th>
-                                                                <th class="border-0">Size</th>
-                                                                <th class="border-0">Owner</th>
-                                                                <th class="border-0">Members</th>
-                                                                <th class="border-0" style="width: 80px;">Action</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">App Design & Development</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Jan 03, 2020</p>
-                                                                    <span class="font-12">by Andrew</span>
-                                                                </td>
-                                                                <td>128 MB</td>
-                                                                <td>
-                                                                    Danielle Thompson
-                                                                </td>
-                                                                <td id="tooltip-container">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-1.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                            <img src="images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Username">
-                                                                            <img src="images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td class="">
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">Hyper-sketch-design.zip</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Feb 13, 2020</p>
-                                                                    <span class="font-12">by Coderthemes</span>
-                                                                </td>
-                                                                <td>521 MB</td>
-                                                                <td>
-                                                                    Coder Themes
-                                                                </td>
-                                                                <td id="tooltip-container1">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container1" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container1" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-1.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container1" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                            <img src="images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-    
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">Annualreport.pdf</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Dec 18, 2019</p>
-                                                                    <span class="font-12">by Alejandro</span>
-                                                                </td>
-                                                                <td>7.2 MB</td>
-                                                                <td>
-                                                                    Gary Coley
-                                                                </td>
-                                                                <td id="tooltip-container2">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-9.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-7.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                            <img src="images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-    
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">Wireframes</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Nov 25, 2019</p>
-                                                                    <span class="font-12">by Dunkle</span>
-                                                                </td>
-                                                                <td>54.2 MB</td>
-                                                                <td>
-                                                                    Jasper Rigg
-                                                                </td>
-                                                                <td id="tooltip-container3">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-1.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-8.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                            <img src="images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="Username">
-                                                                            <img src="images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-    
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">Documentation.docs</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Feb 9, 2020</p>
-                                                                    <span class="font-12">by Justin</span>
-                                                                </td>
-                                                                <td>8.3 MB</td>
-                                                                <td>
-                                                                    Cooper Sharwood
-                                                                </td>
-                                                                <td id="tooltip-container4">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container4" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container4" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-10.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-    
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-    
-                                            </div> <!-- end .mt-3-->
+                                        </div>
 
-                                        </div> 
-                                        <!-- end inbox-rightbar-->
+                                        <div dir="ltr">
+                                            <div id="dash-revenue-chart" class="apex-charts" data-colors="#0acf97,#fa5c7c"></div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+                        </div>
+                        <!-- end row-->
+
+
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Settings</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title mb-3">Top Performing</h4>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-sm table-nowrap table-centered mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>User</th>
+                                                        <th>Leads</th>
+                                                        <th>Deals</th>
+                                                        <th>Tasks</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-15 mb-1 fw-normal">Jeremy Young</h5>
+                                                            <span class="text-muted font-13">Senior Sales Executive</span>
+                                                        </td>
+                                                        <td>187</td>
+                                                        <td>154</td>
+                                                        <td>49</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-15 mb-1 fw-normal">Thomas Krueger</h5>
+                                                            <span class="text-muted font-13">Senior Sales Executive</span>
+                                                        </td>
+                                                        <td>235</td>
+                                                        <td>127</td>
+                                                        <td>83</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-15 mb-1 fw-normal">Pete Burdine</h5>
+                                                            <span class="text-muted font-13">Senior Sales Executive</span>
+                                                        </td>
+                                                        <td>365</td>
+                                                        <td>148</td>
+                                                        <td>62</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-15 mb-1 fw-normal">Mary Nelson</h5>
+                                                            <span class="text-muted font-13">Senior Sales Executive</span>
+                                                        </td>
+                                                        <td>753</td>
+                                                        <td>159</td>
+                                                        <td>258</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-15 mb-1 fw-normal">Kevin Grove</h5>
+                                                            <span class="text-muted font-13">Senior Sales Executive</span>
+                                                        </td>
+                                                        <td>458</td>
+                                                        <td>126</td>
+                                                        <td>73</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div>
+                            <!-- end col-->
+
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Settings</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title mb-4">Recent Leads</h4>
+
+                                        <div class="d-flex align-items-start">
+                                            <img class="me-3 rounded-circle" src="images/users/avatar-2.jpg" width="40" alt="Generic placeholder image">
+                                            <div class="w-100 overflow-hidden">
+                                                <span class="badge badge-warning-lighten float-end">Cold lead</span>
+                                                <h5 class="mt-0 mb-1">Risa Pearson</h5>
+                                                <span class="font-13">richard.john@mail.com</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-start mt-3">
+                                            <img class="me-3 rounded-circle" src="images/users/avatar-3.jpg" width="40" alt="Generic placeholder image">
+                                            <div class="w-100 overflow-hidden">
+                                                <span class="badge badge-danger-lighten float-end">Lost lead</span>
+                                                <h5 class="mt-0 mb-1">Margaret D. Evans</h5>
+                                                <span class="font-13">margaret.evans@rhyta.com</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-start mt-3">
+                                            <img class="me-3 rounded-circle" src="images/users/avatar-4.jpg" width="40" alt="Generic placeholder image">
+                                            <div class="w-100 overflow-hidden">
+                                                <span class="badge badge-success-lighten float-end">Won lead</span>
+                                                <h5 class="mt-0 mb-1">Bryan J. Luellen</h5>
+                                                <span class="font-13">bryuellen@dayrep.com</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-start mt-3">
+                                            <img class="me-3 rounded-circle" src="images/users/avatar-5.jpg" width="40" alt="Generic placeholder image">
+                                            <div class="w-100 overflow-hidden">
+                                                <span class="badge badge-warning-lighten float-end">Cold lead</span>
+                                                <h5 class="mt-0 mb-1">Kathryn S. Collier</h5>
+                                                <span class="font-13">collier@jourrapide.com</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-start mt-3">
+                                            <img class="me-3 rounded-circle" src="assets/images/users/avatar-1.jpg" width="40" alt="Generic placeholder image">
+                                            <div class="w-100 overflow-hidden">
+                                                <span class="badge badge-warning-lighten float-end">Cold lead</span>
+                                                <h5 class="mt-0 mb-1">Timothy Kauper</h5>
+                                                <span class="font-13">thykauper@rhyta.com</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-start mt-3">
+                                            <img class="me-3 rounded-circle" src="images/users/avatar-6.jpg" width="40" alt="Generic placeholder image">
+                                            <div class="w-100 overflow-hidden">
+                                                <span class="badge badge-success-lighten float-end">Won lead</span>
+                                                <h5 class="mt-0 mb-1">Zara Raws</h5>
+                                                <span class="font-13">austin@dayrep.com</span>
+                                            </div>
+                                        </div>
+                                           
                                     </div>
                                     <!-- end card-body -->
-                                    <div class="clearfix"></div>
-                                </div> <!-- end card-box -->
+                                </div>
+                                <!-- end card-->
+                            </div>
+                            <!-- end col -->  
+                            
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="card cta-box bg-primary text-white">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start align-items-center">
+                                            <div class="w-100 overflow-hidden">
+                                                <h2 class="mt-0"><i class="mdi mdi-bullhorn-outline"></i>&nbsp;</h2>
+                                                <h3 class="m-0 fw-normal cta-box-title">Enhance your <b>Campaign</b> for better outreach <i class="mdi mdi-arrow-right"></i></h3>
+                                            </div>
+                                            <img class="ms-3" src="images/email-campaign.svg" width="120" alt="Generic placeholder image">
+                                        </div>
+                                    </div>
+                                    <!-- end card-body -->
+                                </div>
+                                <!-- end card-->
 
-                            </div> <!-- end Col -->
-                        </div><!-- End row -->
+                                <!-- Todo-->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Settings</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title mb-2">Todo</h4>
 
+                                        <div class="todoapp">
+                                            <div data-simplebar="" style="max-height: 224px">
+                                                <ul class="list-group list-group-flush todo-list" id="todo-list"></ul>
+                                            </div>
+                                        </div> <!-- end .todoapp-->
+
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card-->
+
+                            </div>
+                            <!-- end col -->  
+                        </div>
+                        <!-- end row-->
+                        
                     </div> <!-- container -->
 
-                </div>
-                <!-- content -->
+                </div> <!-- content -->
 
                 <!-- Footer Start -->
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                <script>document.write(new Date().getFullYear())</script> © Hoàng nà - nguyenduchoang522@gmail.com
+                                <script>document.write(new Date().getFullYear())</script> © Hyper - Coderthemes.com
                             </div>
                             <div class="col-md-6">
                                 <div class="text-md-end footer-links d-none d-md-block">
-                                    <a href="https://www.facebook.com/profile.php?id=100020891342691">Facebook</a>
-                                    <a href="javascript: void(0);">Ủng hộ</a>
-                                    <a href="javascript: void(0);">Liện hệ với chúng tôi.</a>
+                                    <a href="javascript: void(0);">About</a>
+                                    <a href="javascript: void(0);">Support</a>
+                                    <a href="javascript: void(0);">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -1531,8 +1502,9 @@
         </div>
         <!-- END wrapper -->
 
-        <!-- Right Sidebar -->
-        <div class="end-bar">
+
+         <!-- Right Sidebar -->
+         <div class="end-bar">
 
             <div class="rightbar-title">
                 <a href="javascript:void(0);" class="end-bar-toggle float-end">
@@ -1623,18 +1595,19 @@
         <div class="rightbar-overlay"></div>
         <!-- /End-bar -->
 
+
         <!-- bundle -->
         <script src="js/vendor.min.js"></script>
         <script src="js/app.min.js"></script>
 
-        <!-- third party js -->
+        <!-- Apex js -->
         <script src="js/vendor/apexcharts.min.js"></script>
-        <script src="js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="js/vendor/jquery-jvectormap-world-mill-en.js"></script>
-        <!-- third party js ends -->
+
+        <!-- Todo js -->
+        <script src="js/ui/component.todo.js"></script>
 
         <!-- demo app -->
-        <script src="js/pages/demo.dashboard.js"></script>
+        <script src="js/pages/demo.dashboard-crm.js"></script>
         <!-- end demo js-->
     </body>
 </html>

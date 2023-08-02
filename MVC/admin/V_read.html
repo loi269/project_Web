@@ -1,28 +1,25 @@
 ﻿<!DOCTYPE html>
-    <html lang="en">
-
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Trang chu admin</title>
+        <title>Đọc mail</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
 
-
-        <!-- third party css -->
-        <link href="css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
-        <!-- third party css end -->
+        <!-- SimpleMDE css -->
+        <link href="css/vendor/simplemde.min.css" rel="stylesheet" type="text/css">
 
         <!-- App css -->
         <link href="css/icons.min.css" rel="stylesheet" type="text/css">
         <link href="css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     </head>
 
-    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false,
-         "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
         <!-- Begin page -->
         <div class="wrapper">
             <!-- ========== Left Sidebar Start ========== -->
@@ -69,7 +66,7 @@
                                         <a href="V_phantich.html">Phân tích</a>
                                     </li>
                                     <li>
-                                        <a href="V_CRM.html">CRM</a>
+                                        <a href="dashboard-crm.html">CRM</a>
                                     </li>
                                     <li>
                                         <a href="V_duan.html">Dự án</a>
@@ -81,14 +78,14 @@
                         <li class="side-nav-title side-nav-item">Ứng dụng</li>
 
                         <li class="side-nav-item">
-                            <a href="apps-calendar.html" class="side-nav-link">
+                            <a href="V_lich.html" class="side-nav-link">
                                 <i class="uil-calender"></i>
                                 <span> Lịch </span>
                             </a>
                         </li>
 
                         <li class="side-nav-item">
-                            <a href="apps-chat.html" class="side-nav-link">
+                            <a href="V_trochuyen.html" class="side-nav-link">
                                 <i class="uil-comments-alt"></i>
                                 <span> Trò chuyện </span>
                             </a>
@@ -106,22 +103,22 @@
                                         <a href="V_danhsachsanpham.html">Danh sách sản phẩm</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-products-details.html">Chi tiết sản phẩm</a>
+                                        <a href="V_chitietsanpham.html">Chi tiết sản phẩm</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-orders.html">Đơn đặt hàng</a>
+                                        <a href="V_dondathang.html">Đơn đặt hàng</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-orders-details.html">Chi tiết đặt hàng</a>
+                                        <a href="V_chitietdathang.html">Chi tiết đặt hàng</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-customers.html">Khách hàng</a>
+                                        <a href="V_danhsachkhachhang.html">Khách hàng</a>
                                     </li>
                                     <li>
                                         <a href="apps-ecommerce-shopping-cart.html">Giỏ hàng</a>
                                     </li>
                                     <li>
-                                        <a href="apps-ecommerce-checkout.html">Thanh toán</a>
+                                        <a href="V_thanhtoan.html">Thanh toán</a>
                                     </li>
                                     <li>
                                         <a href="apps-ecommerce-sellers.html">Người bán</a>
@@ -142,10 +139,10 @@
                                         <a href="V_themsanpham.html">Thêm sản phẩm</a>
                                     </li>
                                     <li>
-                                        <a href="V_themnhanvien.html">Thêm khách hàng</a>
+                                        <a href="V_themkhachhang.html">Thêm khách hàng</a>
                                     </li>
                                     <li>
-                                        <a href="#">Thêm đơn hàng</a>
+                                        <a href="V_themdonhang.html">Thêm đơn hàng</a>
                                     </li>
                                 </ul>
                             </div>
@@ -160,10 +157,10 @@
                             <div class="collapse" id="sidebarEmail">
                                 <ul class="side-nav-second-level">
                                     <li>
-                                        <a href="apps-email-inbox.html">Hộp thư đến</a>
+                                        <a href="V_inbox.html">Hộp thư đến</a>
                                     </li>
                                     <li>
-                                        <a href="apps-email-read.html">Đọc mail</a>
+                                        <a href="V_read.html">Đọc mail</a>
                                     </li>
                                 </ul>
                             </div>
@@ -222,7 +219,7 @@
                         </li>
 
                         <li class="side-nav-item">
-                            <a href="apps-file-manager.html" class="side-nav-link">
+                            <a href="V_quanlytaptin.html" class="side-nav-link">
                                 <i class="uil-folder-plus"></i>
                                 <span> Quản lý tập tin </span>
                             </a>
@@ -1028,28 +1025,28 @@
                                 </div>
                             </div>
                         </div>
-                    </div><br>
+                    </div>
                     <!-- end Topbar -->
-                    
+
                     <!-- Start Content-->
                     <div class="container-fluid">
-
-                        <!-- start page title -->
+                        
+                        <!-- start page email-title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Apps</a></li>
-                                            <li class="breadcrumb-item active">File Manager</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Email</a></li>
+                                            <li class="breadcrumb-item active">Email Read</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">File Manager</h4>
+                                    <h4 class="page-title">Email Read</h4>
                                 </div>
                             </div>
-                        </div>
-                        <!-- end page title -->
+                        </div>     
+                        <!-- end page email-title --> 
 
                         <div class="row">
 
@@ -1060,32 +1057,40 @@
                                         <!-- Left sidebar -->
                                         <div class="page-aside-left">
 
-                                            <div class="btn-group d-block mb-2">
-                                                <button type="button" class="btn btn-success dropdown-toggle w-100" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-plus"></i> Create New </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-folder-plus-outline me-1"></i> Folder</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-file-plus-outline me-1"></i> File</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-file-document me-1"></i> Document</a>
-                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-upload me-1"></i> Choose File</a>
+                                            <div class="d-grid">
+                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#compose-modal">Compose</button>
+                                            </div>
+
+                                            <div class="email-menu-list mt-3">
+                                                <a href="javascript: void(0);" class="text-danger fw-bold"><i class="dripicons-inbox me-2"></i>Inbox<span class="badge badge-danger-lighten float-end ms-2">7</span></a>
+                                                <a href="javascript: void(0);"><i class="dripicons-star me-2"></i>Starred</a>
+                                                <a href="javascript: void(0);"><i class="dripicons-clock me-2"></i>Snoozed</a>
+                                                <a href="javascript: void(0);"><i class="dripicons-document me-2"></i>Draft<span class="badge badge-info-lighten float-end ms-2">32</span></a>
+                                                <a href="javascript: void(0);"><i class="dripicons-exit me-2"></i>Sent Mail</a>
+                                                <a href="javascript: void(0);"><i class="dripicons-trash me-2"></i>Trash</a>
+                                                <a href="javascript: void(0);"><i class="dripicons-tag me-2"></i>Important</a>
+                                                <a href="javascript: void(0);"><i class="dripicons-warning me-2"></i>Spam</a>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <h6 class="text-uppercase">Labels</h6>
+                                                <div class="email-menu-list labels-list mt-2">
+                                                    <a href="javascript: void(0);"><i class="mdi mdi-circle font-13 text-info me-2"></i>Updates</a>
+                                                    <a href="javascript: void(0);"><i class="mdi mdi-circle font-13 text-warning me-2"></i>Friends</a>
+                                                    <a href="javascript: void(0);"><i class="mdi mdi-circle font-13 text-success me-2"></i>Family</a>
+                                                    <a href="javascript: void(0);"><i class="mdi mdi-circle font-13 text-primary me-2"></i>Social</a>
+                                                    <a href="javascript: void(0);"><i class="mdi mdi-circle font-13 text-danger me-2"></i>Important</a>
+                                                    <a href="javascript: void(0);"><i class="mdi mdi-circle font-13 text-secondary me-2"></i>Promotions</a>
                                                 </div>
                                             </div>
-                                            <div class="email-menu-list mt-3">
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-folder-outline font-18 align-middle me-2"></i>My Files</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-google-drive font-18 align-middle me-2"></i>Google Drive</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-dropbox font-18 align-middle me-2"></i>Dropbox</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-share-variant font-18 align-middle me-2"></i>Share with me</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-clock-outline font-18 align-middle me-2"></i>Recent</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-star-outline font-18 align-middle me-2"></i>Starred</a>
-                                                <a href="#" class="list-group-item border-0"><i class="mdi mdi-delete font-18 align-middle me-2"></i>Deleted Files</a>
-                                            </div>
-    
+
                                             <div class="mt-5">
                                                 <h4><span class="badge rounded-pill p-1 px-2 badge-secondary-lighten">FREE</span></h4>
                                                 <h6 class="text-uppercase mt-3">Storage</h6>
                                                 <div class="progress my-2 progress-sm">
                                                     <div class="progress-bar progress-lg bg-success" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
-                                                <p class="text-muted font-12 mb-0">7.02 GB (46%) of 15 GB used</p>
+                                                <p class="text-muted font-13 mb-0">7.02 GB (46%) of 15 GB used</p>
                                             </div>
 
                                         </div>
@@ -1093,427 +1098,227 @@
 
                                         <div class="page-aside-right">
 
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="app-search">
-                                                    <form>
-                                                        <div class="mb-2 position-relative">
-                                                            <input type="text" class="form-control" placeholder="Search files...">
-                                                            <span class="mdi mdi-magnify search-icon"></span>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div>
-                                                    <button type="submit" class="btn btn-sm btn-light"><i class="mdi mdi-format-list-bulleted"></i></button>
-                                                    <button type="submit" class="btn btn-sm"><i class="mdi mdi-view-grid"></i></button>
-                                                    <button type="submit" class="btn btn-sm"><i class="mdi mdi-information-outline"></i></button>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-secondary"><i class="mdi mdi-archive font-16"></i></button>
+                                                <button type="button" class="btn btn-secondary"><i class="mdi mdi-alert-octagon font-16"></i></button>
+                                                <button type="button" class="btn btn-secondary"><i class="mdi mdi-delete-variant font-16"></i></button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-secondary dropdown-toggle arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="mdi mdi-folder font-16"></i>
+                                                    <i class="mdi mdi-chevron-down"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <span class="dropdown-header">Move to:</span>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Social</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Promotions</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Updates</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Forums</a>
                                                 </div>
                                             </div>
-    
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-secondary dropdown-toggle arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="mdi mdi-label font-16"></i>
+                                                    <i class="mdi mdi-chevron-down"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <span class="dropdown-header">Label as:</span>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Updates</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Social</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Promotions</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Forums</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-secondary dropdown-toggle arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="mdi mdi-dots-horizontal font-16"></i> More
+                                                    <i class="mdi mdi-chevron-down"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <span class="dropdown-header">More Options :</span>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Mark as Unread</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Add to Tasks</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Add Star</a>
+                                                    <a class="dropdown-item" href="javascript: void(0);">Mute</a>
+                                                </div>
+                                            </div>
+
                                             <div class="mt-3">
-                                                <h5 class="mb-2">Quick Access</h5>
-    
-                                                <div class="row mx-n1 g-0">
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-folder-zip font-16"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Hyper-sketch.zip</a>
-                                                                        <p class="mb-0 font-13">2.3 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-folder font-16"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Compile Version</a>
-                                                                        <p class="mb-0 font-13">87.2 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
+                                                <h5 class="font-18">Your elite author Graphic Optimization reward is ready!</h5>
+
+                                                <hr>
+
+                                                <div class="d-flex mb-3 mt-1">
+                                                    <img class="d-flex me-2 rounded-circle" src="images/users/avatar-2.jpg" alt="placeholder image" height="32">
+                                                    <div class="w-100 overflow-hidden">
+                                                        <small class="float-end">Dec 14, 2017, 5:17 AM</small>
+                                                        <h6 class="m-0 font-14">Steven Smith</h6>
+                                                        <small class="text-muted">From: jonathan@domain.com</small>
+                                                    </div>
+                                                </div>
+
+                                                <p>Hi Coderthemes!</p>
+                                                <p>Clicking ‘Order Service’ on the right-hand side of the above page will present you with an order page. This service has the following Briefing Guidelines that will need to be filled before placing your order:</p>
+                                                <ol>
+                                                    <li>Your design preferences (Color, style, shapes, Fonts, others) </li>
+                                                    <li>Tell me, why is your item different? </li>
+                                                    <li>Do you want to bring up a specific feature of your item? If yes, please tell me </li>
+                                                    <li>Do you have any preference or specific thing you would like to change or improve on your item page? </li>
+                                                    <li>Do you want to include your item's or your provider's logo on the page? if yes, please send it to me in vector format (Ai or EPS) </li>
+                                                    <li>Please provide me with the copy or text to display</li>
+                                                </ol>
+
+                                                <p>Filling in this form with the above information will ensure that they will be able to start work quickly.</p>
+                                                <p>You can complete your order by putting your coupon code into the Promotional code box and clicking ‘Apply Coupon’.</p>
+                                                <p><b>Best,</b> <br> Graphic Studio</p>
+                                                <hr>
+
+                                                <h5 class="mb-3">Attachments</h5>
+
+                                                <div class="row">
+                                                    <div class="col-xl-4">
+                                                        <div class="card mb-1 shadow-none border">
                                                             <div class="p-2">
                                                                 <div class="row align-items-center">
                                                                     <div class="col-auto">
                                                                         <div class="avatar-sm">
                                                                             <span class="avatar-title bg-primary-lighten text-primary rounded">
-                                                                                <i class="mdi mdi-folder-zip-outline font-16"></i>
+                                                                                .ZIP
                                                                             </span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">admin.zip</a>
-                                                                        <p class="mb-0 font-13">45.1 MB</p>
+                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Hyper-admin-design.zip</a>
+                                                                        <p class="mb-0">2.3 MB</p>
                                                                     </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
+                                                                    <div class="col-auto">
+                                                                        <!-- Button -->
+                                                                        <a href="javascript:void(0);" class="btn btn-link btn-lg text-muted">
+                                                                            <i class="dripicons-download"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end col -->
+                                                    <div class="col-xl-4">
+                                                        <div class="card mb-1 shadow-none border">
+                                                            <div class="p-2">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-auto">
+                                                                        <img src="images/projects/project-1.jpg" class="avatar-sm rounded" alt="file-image">
+                                                                    </div>
+                                                                    <div class="col ps-0">
+                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Dashboard-design.jpg</a>
+                                                                        <p class="mb-0">3.25 MB</p>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <!-- Button -->
+                                                                        <a href="javascript:void(0);" class="btn btn-link btn-lg text-muted">
+                                                                            <i class="dripicons-download"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end col -->
+                                                    <div class="col-xl-4">
+                                                        <div class="card mb-0 shadow-none border">
                                                             <div class="p-2">
                                                                 <div class="row align-items-center">
                                                                     <div class="col-auto">
                                                                         <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-file-pdf-outline font-16"></i>
+                                                                            <span class="avatar-title bg-secondary text-light rounded">
+                                                                                .MP4
                                                                             </span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Docs.pdf</a>
-                                                                        <p class="mb-0 font-13">7.5 MB</p>
+                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Admin-bug-report.mp4</a>
+                                                                        <p class="mb-0">7.05 MB</p>
                                                                     </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
                                                                     <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-file-pdf-outline font-18"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">License-details.pdf</a>
-                                                                        <p class="mb-0 font-13">784 KB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-folder-account font-18"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Purchase Verification</a>
-                                                                        <p class="mb-0 font-13">2.2 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-    
-                                                    <div class="col-xxl-3 col-lg-6">
-                                                        <div class="card m-1 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title bg-light text-secondary rounded">
-                                                                                <i class="mdi mdi-folder-account font-18"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col ps-0">
-                                                                        <a href="javascript:void(0);" class="text-muted fw-bold">Hyper Integrations</a>
-                                                                        <p class="mb-0 font-13">874 MB</p>
-                                                                    </div>
-                                                                </div> <!-- end row -->
-                                                            </div> <!-- end .p-2-->
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end col-->
-                                                </div> <!-- end row-->
-                                            </div> <!-- end .mt-3-->
-    
-    
-                                            <div class="mt-3">
-                                                <h5 class="mb-3">Recent</h5>
-    
-                                                <div class="table-responsive">
-                                                    <table class="table table-centered table-nowrap mb-0">
-                                                        <thead class="table-light">
-                                                            <tr>
-                                                                <th class="border-0">Name</th>
-                                                                <th class="border-0">Last Modified</th>
-                                                                <th class="border-0">Size</th>
-                                                                <th class="border-0">Owner</th>
-                                                                <th class="border-0">Members</th>
-                                                                <th class="border-0" style="width: 80px;">Action</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">App Design & Development</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Jan 03, 2020</p>
-                                                                    <span class="font-12">by Andrew</span>
-                                                                </td>
-                                                                <td>128 MB</td>
-                                                                <td>
-                                                                    Danielle Thompson
-                                                                </td>
-                                                                <td id="tooltip-container">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-1.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                            <img src="images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Username">
-                                                                            <img src="images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <!-- Button -->
+                                                                        <a href="javascript:void(0);" class="btn btn-link btn-lg text-muted">
+                                                                            <i class="dripicons-download"></i>
                                                                         </a>
                                                                     </div>
-                                                                </td>
-                                                                <td class="">
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">Hyper-sketch-design.zip</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Feb 13, 2020</p>
-                                                                    <span class="font-12">by Coderthemes</span>
-                                                                </td>
-                                                                <td>521 MB</td>
-                                                                <td>
-                                                                    Coder Themes
-                                                                </td>
-                                                                <td id="tooltip-container1">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container1" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container1" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-1.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container1" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                            <img src="images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-    
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">Annualreport.pdf</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Dec 18, 2019</p>
-                                                                    <span class="font-12">by Alejandro</span>
-                                                                </td>
-                                                                <td>7.2 MB</td>
-                                                                <td>
-                                                                    Gary Coley
-                                                                </td>
-                                                                <td id="tooltip-container2">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-9.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-7.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                            <img src="images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-    
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">Wireframes</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Nov 25, 2019</p>
-                                                                    <span class="font-12">by Dunkle</span>
-                                                                </td>
-                                                                <td>54.2 MB</td>
-                                                                <td>
-                                                                    Jasper Rigg
-                                                                </td>
-                                                                <td id="tooltip-container3">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-1.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-8.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                            <img src="images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="Username">
-                                                                            <img src="images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-    
-                                                            <tr>
-                                                                <td>
-                                                                    <span class="ms-2 fw-semibold"><a href="javascript: void(0);" class="text-reset">Documentation.docs</a></span>
-                                                                </td>
-                                                                <td>
-                                                                    <p class="mb-0">Feb 9, 2020</p>
-                                                                    <span class="font-12">by Justin</span>
-                                                                </td>
-                                                                <td>8.3 MB</td>
-                                                                <td>
-                                                                    Cooper Sharwood
-                                                                </td>
-                                                                <td id="tooltip-container4">
-                                                                    <div class="avatar-group">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container4" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                            <img src="images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                
-                                                                        <a href="javascript: void(0);" class="avatar-group-item mb-0" data-bs-container="#tooltip-container4" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                            <img src="images/users/avatar-10.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group dropdown">
-                                                                        <a href="#" class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-xs" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
-                                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-share-variant me-2 text-muted vertical-middle"></i>Share</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-link me-2 text-muted vertical-middle"></i>Get Sharable Link</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-pencil me-2 text-muted vertical-middle"></i>Rename</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-download me-2 text-muted vertical-middle"></i>Download</a>
-                                                                            <a class="dropdown-item" href="#"><i class="mdi mdi-delete me-2 text-muted vertical-middle"></i>Remove</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-    
-                                                        </tbody>
-                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end col -->
                                                 </div>
-    
-                                            </div> <!-- end .mt-3-->
+                                                <!-- end row-->
+                                                
+                                                <div class="mt-5">
+                                                    <a href="" class="btn btn-secondary me-2"><i class="mdi mdi-reply me-1"></i> Reply</a>
+                                                    <a href="" class="btn btn-light">Forward <i class="mdi mdi-forward ms-1"></i></a>
+                                                </div>
+     
+                                            </div>
+                                            <!-- end .mt-4 -->
 
                                         </div> 
                                         <!-- end inbox-rightbar-->
                                     </div>
-                                    <!-- end card-body -->
+
                                     <div class="clearfix"></div>
                                 </div> <!-- end card-box -->
 
                             </div> <!-- end Col -->
                         </div><!-- End row -->
-
+                        
                     </div> <!-- container -->
 
-                </div>
-                <!-- content -->
+                </div> <!-- content -->
+
+                <!-- Compose Modal -->
+                <div id="compose-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header modal-colored-header bg-primary">
+                                <h4 class="modal-title" id="compose-header-modalLabel">New Message</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="p-1">
+                                <div class="modal-body px-3 pt-3 pb-0">
+                                    <form>
+                                        <div class="mb-2">
+                                            <label for="msgto" class="form-label">To</label>
+                                            <input type="text" id="msgto" class="form-control" placeholder="Example@email.com">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="mailsubject" class="form-label">Subject</label>
+                                            <input type="text" id="mailsubject" class="form-control" placeholder="Your subject">
+                                        </div>
+                                        <div class="write-mdg-box mb-3">
+                                            <label class="form-label">Message</label>
+                                            <textarea id="simplemde1"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="px-3 pb-3">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><i class="mdi mdi-send me-1"></i> Send Message</button>
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
 
                 <!-- Footer Start -->
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                <script>document.write(new Date().getFullYear())</script> © Hoàng nà - nguyenduchoang522@gmail.com
+                                <script>document.write(new Date().getFullYear())</script> © Hyper - Coderthemes.com
                             </div>
                             <div class="col-md-6">
                                 <div class="text-md-end footer-links d-none d-md-block">
-                                    <a href="https://www.facebook.com/profile.php?id=100020891342691">Facebook</a>
-                                    <a href="javascript: void(0);">Ủng hộ</a>
-                                    <a href="javascript: void(0);">Liện hệ với chúng tôi.</a>
+                                    <a href="javascript: void(0);">About</a>
+                                    <a href="javascript: void(0);">Support</a>
+                                    <a href="javascript: void(0);">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -1531,91 +1336,92 @@
         </div>
         <!-- END wrapper -->
 
-        <!-- Right Sidebar -->
-        <div class="end-bar">
 
-            <div class="rightbar-title">
-                <a href="javascript:void(0);" class="end-bar-toggle float-end">
-                    <i class="dripicons-cross noti-icon"></i>
-                </a>
-                <h5 class="m-0">Cài đặt</h5>
-            </div>
+       <!-- Right Sidebar -->
+       <div class="end-bar">
 
-            <div class="rightbar-content h-100" data-simplebar="">
+        <div class="rightbar-title">
+            <a href="javascript:void(0);" class="end-bar-toggle float-end">
+                <i class="dripicons-cross noti-icon"></i>
+            </a>
+            <h5 class="m-0">Cài đặt</h5>
+        </div>
 
-                <div class="p-3">
-                    <div class="alert alert-warning" role="alert">
-                        <strong>Tùy chỉnh </strong> Màu nền, màu menu, v.v...
-                    </div>
+        <div class="rightbar-content h-100" data-simplebar="">
 
-                    <!-- Settings -->
-                    <h5 class="mt-3">Bảng màu</h5>
-                    <hr class="mt-1">
+            <div class="p-3">
+                <div class="alert alert-warning" role="alert">
+                    <strong>Tùy chỉnh </strong> Màu nền, màu menu, v.v...
+                </div>
 
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="light" id="light-mode-check" checked="">
-                        <label class="form-check-label" for="light-mode-check">Chế độ sáng</label>
-                    </div>
+                <!-- Settings -->
+                <h5 class="mt-3">Bảng màu</h5>
+                <hr class="mt-1">
 
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="dark" id="dark-mode-check">
-                        <label class="form-check-label" for="dark-mode-check">Chế độ tối</label>
-                    </div>
-       
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="light" id="light-mode-check" checked="">
+                    <label class="form-check-label" for="light-mode-check">Chế độ sáng</label>
+                </div>
 
-                    <!-- Width -->
-                    <h5 class="mt-4">Chiều rộng</h5>
-                    <hr class="mt-1">
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="width" value="fluid" id="fluid-check" checked="">
-                        <label class="form-check-label" for="fluid-check">Mở rộng</label>
-                    </div>
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="dark" id="dark-mode-check">
+                    <label class="form-check-label" for="dark-mode-check">Chế độ tối</label>
+                </div>
+   
 
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="width" value="boxed" id="boxed-check">
-                        <label class="form-check-label" for="boxed-check">Thu nhỏ</label>
-                    </div>
+                <!-- Width -->
+                <h5 class="mt-4">Chiều rộng</h5>
+                <hr class="mt-1">
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="width" value="fluid" id="fluid-check" checked="">
+                    <label class="form-check-label" for="fluid-check">Mở rộng</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="width" value="boxed" id="boxed-check">
+                    <label class="form-check-label" for="boxed-check">Thu nhỏ</label>
+                </div>
+    
+
+                <!-- Left Sidebar-->
+                <h5 class="mt-4">Tùy chỉnh menu</h5>
+                <hr class="mt-1">
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="theme" value="default" id="default-check">
+                    <label class="form-check-label" for="default-check">Mặc định</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="theme" value="light" id="light-check" checked="">
+                    <label class="form-check-label" for="light-check">Sáng</label>
+                </div>
+
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" name="theme" value="dark" id="dark-check">
+                    <label class="form-check-label" for="dark-check">Tối</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="compact" value="fixed" id="fixed-check" checked="">
+                    <label class="form-check-label" for="fixed-check">Đã sửa</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="compact" value="condensed" id="condensed-check">
+                    <label class="form-check-label" for="condensed-check">Cô đọng</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="compact" value="scrollable" id="scrollable-check">
+                    <label class="form-check-label" for="scrollable-check">Có thể cuộn</label>
+                </div>
+
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary" id="resetBtn">Đặt về mặc định</button>
         
-
-                    <!-- Left Sidebar-->
-                    <h5 class="mt-4">Tùy chỉnh menu</h5>
-                    <hr class="mt-1">
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="theme" value="default" id="default-check">
-                        <label class="form-check-label" for="default-check">Mặc định</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="theme" value="light" id="light-check" checked="">
-                        <label class="form-check-label" for="light-check">Sáng</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input" type="checkbox" name="theme" value="dark" id="dark-check">
-                        <label class="form-check-label" for="dark-check">Tối</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="compact" value="fixed" id="fixed-check" checked="">
-                        <label class="form-check-label" for="fixed-check">Đã sửa</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="compact" value="condensed" id="condensed-check">
-                        <label class="form-check-label" for="condensed-check">Cô đọng</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="compact" value="scrollable" id="scrollable-check">
-                        <label class="form-check-label" for="scrollable-check">Có thể cuộn</label>
-                    </div>
-
-                    <div class="d-grid mt-4">
-                        <button class="btn btn-primary" id="resetBtn">Đặt về mặc định</button>
-            
-                        <a href="#" class="btn btn-danger mt-3" target="_blank"><i class="mdi mdi-basket me-1"></i> Nâng cấp ngay</a>
-                    </div>
-                </div> <!-- end padding-->
+                    <a href="#" class="btn btn-danger mt-3" target="_blank"><i class="mdi mdi-basket me-1"></i> Nâng cấp ngay</a>
+                </div>
+            </div> <!-- end padding-->
 
             </div>
         </div>
@@ -1623,18 +1429,16 @@
         <div class="rightbar-overlay"></div>
         <!-- /End-bar -->
 
+
         <!-- bundle -->
         <script src="js/vendor.min.js"></script>
         <script src="js/app.min.js"></script>
 
-        <!-- third party js -->
-        <script src="js/vendor/apexcharts.min.js"></script>
-        <script src="js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="js/vendor/jquery-jvectormap-world-mill-en.js"></script>
-        <!-- third party js ends -->
+        <!-- SimpleMDE js -->
+        <script src="js/vendor/simplemde.min.js"></script>
 
-        <!-- demo app -->
-        <script src="js/pages/demo.dashboard.js"></script>
-        <!-- end demo js-->
+        <!-- Page init js -->
+        <script src="js/pages/demo.inbox.js"></script>
+
     </body>
 </html>
