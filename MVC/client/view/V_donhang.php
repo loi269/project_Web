@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Checkout Page - Ustora Demo</title>
+        <title>Cart Page - Ustora Demo</title>
 
         <!-- Google Fonts -->
         <link
@@ -46,6 +46,11 @@
             src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+                #banggiaohang{
+                    border: 1px solid #CCC;
+                }
+            </style>
     </head>
     <body>
 
@@ -54,56 +59,39 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="user-menu">
-                            <ul>
-                                <li>
-                                    <!--menu dropdown-->
-                                    <div class="dropdown">
-                                        <a style="text-decoration: none;"
-                                            href="login_sigin.html"><i
-                                                class="fa fa-user"></i>&ensp;Đăng
-                                            nhập</a>
-                                        <div class="dropdown-toggle"
-                                            data-toggle="dropdown">
-                                            <a style="text-decoration: none;"
-                                                href="#"><img src="img/user.png"
-                                                    width="25px" height="20px"
-                                                    alt>&ensp;Hồ sơ</a>
-                                        </div>
-                                        <div class="dropdown-menu">
-                                            <a style="text-decoration: none;"
-                                                href="#"
-                                                class="dropdown-item"><i
-                                                    class="fa-regular fa-address-card"></i>&ensp;Trang
-                                                cá nhân</a>
-                                            <a
-                                                style="text-decoration: none;"
-                                                href="V_donhang.html"
-                                                class="dropdown-item"><i
-                                                    class="fa-solid fa-layer-group"></i>&ensp;Xem
-                                                đơn hàng</a>
-                                            <a
-                                                style="text-decoration: none;"
-                                                href="#"
-                                                class="dropdown-item"><i
-                                                    class="fa-solid fa-gear"></i>&ensp;Cài
-                                                đặt</a>
-                                            <a
-                                                style="text-decoration: none;"
-                                                href="login_sigin.html"
-                                                class="dropdown-item"><i
-                                                    class="fa-solid fa-right-from-bracket"></i>&ensp;Đăng
-                                                xuất</a>
-                                        </div>
+                        <ul>
+                            <li>
+                                <!--menu dropdown-->
+                                <div class="dropdown">
+                                    <?php if (isset($_SESSION['ss_client'])) {
+                                    } else {
+                                        echo '<a style="text-decoration: none;" href="?controller=dangnhap"><i class="fa fa-user"></i>&ensp;Đăng nhập</a>';
+                                    } ?>
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <?php
+                                        if (isset($_SESSION['ss_client'])) {
+                                            echo '<a style="text-decoration: none;" href="#"><img src="img/user.png" width="25px" height="20px" alt>&ensp;' . $_SESSION['ss_client1'];
+                                        }
+                                        ?>
+                                        </a>
                                     </div>
-                                </li>
-                                <li><a style="text-decoration: none;"
-                                        href="#"><i class="fa fa-heart"></i>&ensp;Yêu
-                                        thích</a></li>
-                                <li><a style="text-decoration: none;"
-                                        href="cart.html"><i
-                                            class="fa-sharp fa-solid fa-cart-shopping"></i>&ensp;Giỏ
-                                        hàng</a></li>
-                            </ul>
+                                    <div class="dropdown-menu">
+                                        <a style="text-decoration: none;" href="V_profile.html" class="dropdown-item"><i class="fa-regular fa-address-card"></i>&ensp;Trang
+                                            cá nhân</a>
+                                        <a style="text-decoration: none;" href="V_donhang.html" class="dropdown-item"><i class="fa-solid fa-layer-group"></i>&ensp;Xem
+                                            đơn hàng</a>
+                                        <a style="text-decoration: none;" href="#" class="dropdown-item"><i class="fa-solid fa-gear"></i>&ensp;Cài
+                                            đặt</a>
+                                        <a style="text-decoration: none;" href="?controller=dangxuat" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i>&ensp;Đăng
+                                            xuất</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a style="text-decoration: none;" href="#"><i class="fa fa-heart"></i>&ensp;Yêu
+                                    thích</a></li>
+                            <li><a style="text-decoration: none;" href="?controller=giohang"><i class="fa-sharp fa-solid fa-cart-shopping"></i>&ensp;Giỏ
+                                    hàng</a></li>
+                        </ul>
                         </div>
                     </div>
 
@@ -133,15 +121,16 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="logo">
-                            <h1><a href="./"><img style="width: 70px; border-radius: 50%;"
-                                src="img/logo_annhanh.jpg"></a></h1>
+                            <h1><a href="#"><img
+                                        style="width: 70px; border-radius: 50%;"
+                                        src="img/logo_annhanh.jpg"></a></h1>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="shopping-item">
-                            <a href="cart.html">Giỏ hàng
-                                <i class="fa fa-shopping-cart"></i> <span
+                            <a href="?controller=giohang">Giỏ hàng<i
+                                    class="fa fa-shopping-cart"></i> <span
                                     class="product-count">5</span></a>
                         </div>
                     </div>
@@ -164,9 +153,9 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="index.html">Trang chủ</a></li>
-                            <li><a href="shop.html">Cửa hàng</a></li>
-                            <li class="active"><a href="cart.html"><i
+                            <li><a href="?controller=trangchu">Trang chủ</a></li>
+                            <li><a href="?controller=cuahang">Cửa hàng</a></li>
+                            <li class="active"><a href="?controller=giohang"><i
                                         class="fa-sharp fa-solid fa-cart-shopping"></i>
                                     Giỏ hàng</a></li>
                             <li><a href="#">Giới thiệu</a></li>
@@ -185,29 +174,172 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="product-bit-title text-center">
-                            <h2>Thanh Toán</h2>
+                            <h2>Đơn hàng</h2>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="single-product-area" style="text-align: center;">
-            <h1 style="font-size: 48px; color: chartreuse;">Thanh Toán Thành Công</h1>
-            <div>
-                <i style="font-size: 36px; color: chartreuse;" class="fa-solid fa-circle-check"></i>
-            </div><br>
-            <p>Đơn hàng sẽ được xử lý trong giây lát, bạn có thể theo dõi đơn hàng của mình ở phần xem đơn hàng.</p>
-            <br><br><br>
-            <a href="index.html"
-                name="proceed"
-                class="checkout-button button alt wc-forward"
-                style="padding: 13px 25px; background-color: crimson; color:white; text-decoration: none; border-radius: 5px;"><i class="fa-solid fa-house"></i>
-                Trang chủ</a>
-            <a href="V_donhang.html"
-                name="proceed"
-                class="checkout-button button alt wc-forward"
-                style="padding: 13px 25px; background-color: crimson; color:white; text-decoration: none; border-radius: 5px;"><i class="fa-solid fa-layer-group"></i>
-                Xem đơn hàng</a>
+        </div> <!-- End Page title area -->
+
+        <div class="single-product-area">
+            <h5 style="margin-left: 50px;">
+                <a style=" text-decoration: none;" href="cart.html">Quay lại giỏ
+                    hàng</a>
+            </h5>
+            <div role="tabpanel">
+                <ul class="product-tab"
+                    role="tablist">
+                    <li role="presentation"
+                        class="active"><a
+                            href="#home"
+                            aria-controls="home"
+                            role="tab"
+                            data-toggle="tab">Chờ xác nhận</a></li>
+                    <li role="presentation"><a
+                            href="#profile"
+                            aria-controls="profile"
+                            role="tab"
+                            data-toggle="tab">Chờ lấy hàng</a></li>
+                    <li role="presentation"><a
+                            href="#ttchitiet"
+                            aria-controls="ttchitiet"
+                            role="tab"
+                            data-toggle="tab">Đang giao</a></li>
+                    <li role="presentation"><a
+                            href="#danhgia"
+                            aria-controls="ttchitiet"
+                            role="tab"
+                            data-toggle="tab">Đánh giá</a></li>
+                    <li role="presentation"><a
+                            href="#dagiao"
+                            aria-controls="ttchitiet"
+                            role="tab"
+                            data-toggle="tab">Đã giao</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel"
+                        class="tab-pane fade in active"
+                        id="home"
+                        style="text-align: center;">
+                        <h2>Chờ Xác Nhận</h2>
+                        <div style="margin-left: 500px;">
+                            <div class="single-shop-product" style="display: flex;">
+                                <div class="product-upper">
+                                    <img style="width: 130px;"
+                                        src="img/mi_y_sotcachua.jpeg"
+                                        alt="anh">
+
+                                </div>
+                                <div style="">
+                                    <h4>Mi Y</h4>
+                                    &emsp; &emsp;<ins style="text-decoration: none; color: blue;">80,000vnd</ins> &emsp;<del>100,000vnd</del><br><br>
+                                    <h3 style="margin-left: 200px;">Tổng thanh Toán: &emsp; 80,000vnd</h3>
+                                    <p style="color: red;">Đang chờ xác nhận</p>
+                                </div>
+                            </div>
+                            <div class="single-shop-product" style="display: flex;">
+                                <div class="product-upper">
+                                    <img style="width: 130px;"
+                                        src="img/mi_y_sotcachua.jpeg"
+                                        alt="anh">
+
+                                </div>
+                                <div style="">
+                                    <h4>Mi Y</h4>
+                                    &emsp; &emsp;<ins style="text-decoration: none; color: blue;">80,000vnd</ins> &emsp;<del>100,000vnd</del><br><br>
+                                    <h3 style="margin-left: 200px;">Tổng thanh Toán: &emsp; 80,000vnd</h3>
+                                    <p style="color: red;">Đang chờ xác nhận</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel"
+                        class="tab-pane fade"
+                        id="profile"
+                        style="text-align: center;">
+                        <h2>Chờ lấy hàng</h2>
+                        <div style="margin-left: 500px;">
+                            <div class="single-shop-product" style="display: flex;">
+                                <div class="product-upper">
+                                    <img style="width: 130px;"
+                                        src="img/mi_y_sotcachua.jpeg"
+                                        alt="anh">
+
+                                </div>
+                                <div style="">
+                                    <h4>Mi Y</h4>
+                                    &emsp; &emsp;<ins style="text-decoration: none; color: blue;">80,000vnd</ins> &emsp;<del>100,000vnd</del><br><br>
+                                    <h3 style="margin-left: 200px;">Tổng thanh Toán: &emsp; 80,000vnd</h3>
+                                    <p style="color: chartreuse;">Đang chờ lấy hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel"
+                        class="tab-pane fade"
+                        id="ttchitiet">
+                        <div style="margin-left: 500px;">
+                            <div class="single-shop-product" style="display: flex;">
+                                <div class="product-upper">
+                                    <img style="width: 130px;"
+                                        src="img/mi_y_sotcachua.jpeg"
+                                        alt="anh">
+
+                                </div>
+                                <div style="">
+                                    <h4>Mi Y</h4>
+                                    &emsp; &emsp;<ins style="text-decoration: none; color: blue;">80,000vnd</ins> &emsp;<del>100,000vnd</del><br><br>
+                                    <h3 style="margin-left: 200px;">Tổng thanh Toán: &emsp; 80,000vnd</h3>
+                                    <p style="color: chartreuse;">Đang giao hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel"
+                        class="tab-pane fade"
+                        id="danhgia"
+                        style="text-align: center;">
+                        <div style="margin-left: 500px;">
+                            <div class="single-shop-product" style="display: flex;">
+                                <div class="product-upper">
+                                    <img style="width: 130px;"
+                                        src="img/mi_y_sotcachua.jpeg"
+                                        alt="anh">
+
+                                </div>
+                                <div style="">
+                                    <h4>Mi Y</h4>
+                                    &emsp; &emsp;<ins style="text-decoration: none; color: blue;">80,000vnd</ins> &emsp;<del>100,000vnd</del><br><br>
+                                    <h3 style="margin-left: 200px;">Tổng thanh Toán: &emsp; 80,000vnd</h3>
+                                    <p style="color: chartreuse;">Chưa đánh giá</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel"
+                        class="tab-pane fade"
+                        id="dagiao"
+                        style="text-align: center;">
+                        <div style="margin-left: 500px;">
+                            <div class="single-shop-product" style="display: flex;">
+                                <div class="product-upper">
+                                    <img style="width: 130px;"
+                                        src="img/mi_y_sotcachua.jpeg"
+                                        alt="anh">
+
+                                </div>
+                                <div style="">
+                                    <h4>Mi Y</h4>
+                                    &emsp; &emsp;<ins style="text-decoration: none; color: blue;">80,000vnd</ins> &emsp;<del>100,000vnd</del><br><br>
+                                    <h3 style="margin-left: 200px;">Tổng thanh Toán: &emsp; 80,000vnd</h3>
+                                    <p style="color: chartreuse;">Giao hàng thành công</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="footer-top-area">
